@@ -5,9 +5,9 @@ import { Link, NavLink} from "react-router-dom";
 const TopNavBar = () => {
   return (
     <header>
-              <div className="logoarea">
+              <a className="logoarea" href="/Home">
             <img src="https://ahgroup-pk.com/assets/images/logos/ah-logo.png" className="logo" alt="logo"/>
-          </div>
+          </a>
           <nav className="MainNavbar">
 
                 <Link className="navmenubtn" to="/">Home</Link>
