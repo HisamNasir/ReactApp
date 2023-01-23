@@ -1,3 +1,9 @@
-export function Careers(){
-    return <h1>Careers</h1>
+import React from 'react'
+
+const Careers = () => {
+  return (
+    <div>Careers</div>
+  )
 }
+
+export default Careers

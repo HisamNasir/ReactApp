@@ -1,3 +1,9 @@
-export function Approvals(){
-    return <h1>Approvals</h1>
+import React from 'react'
+
+const Approvals = () => {
+  return (
+    <div>Approvals</div>
+  )
 }
+
+export default Approvals

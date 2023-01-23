@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logoarea{
+    padding: 20px;
+}
+.logo{
+    height: 30px;
+}
+.MainNavbar{
+    color: white;
+    background-color:#025392;
+    display: flex;
+    justify-content: center;
+    
+}
+.navmenubtn{
+    margin: 20px;
+}

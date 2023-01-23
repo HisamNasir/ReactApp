@@ -1,3 +1,9 @@
-export function Services(){
-    return <h1>Services</h1>
+import React from 'react'
+
+const Services = () => {
+  return (
+    <div>Services</div>
+  )
 }
+
+export default Services
