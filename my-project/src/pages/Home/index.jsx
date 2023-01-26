@@ -4,27 +4,29 @@ import "./style.css";
 import { useState } from "react";
 const Home = () => {
   const [calc,setCalc]=useState("");
-  const [result,setResult]=useState("");
+  const [result,setResult]=useState(0);
   const opps=['/','*','+','-']
 
-  const displayNumbers = () => {
-    const digits = [];
-    for (let i = 1; i < 10; i++) {
-      digits.push(<button key={i}>{i}</button>);
-    }
-    return digits;
-  };
+  function items(num){
+    return (
+      <button>{num}</button> 
+    );
+  }
+    const arr=[1,2,3,4,5,6,7,8,9,0];
+  const buttonarray=arr.map(items);
+
   return (
     <div className="calculator">
       <div className="display">
-        <span>(0)</span>
+
+        {result}
       </div>
 
       <br />
 
-      <div className="digits">
-      {displayNumbers()}
-      <button>0</button>
+      <div id="digits">
+        {buttonarray}
+
       </div>
       
       <br />
