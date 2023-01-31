@@ -6,6 +6,13 @@
     background: rgb(252, 220, 104);
 
 }
+.Result{
+    font-weight: bolder;
+}
+hr{
+    border-color: black;
+    
+}
 .calculator button:hover{
 
     border: 1px solid;
@@ -17,7 +24,7 @@
     margin: 20%;
 }
  .display{
-    height: 60px;
+    min-height: 60px;
     padding: 10px;
     background: rgb(253, 226, 136);
     border: 2px solid;
