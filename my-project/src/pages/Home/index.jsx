@@ -1,7 +1,7 @@
 // import getValue from "@testing-library/user-event/dist/utils";
 import React from "react";
 import "./style.css";
-import { useState } from "react";
+import { useState } from "react";  
 const Home = () => {
   const [result, setResult] = useState("");
   const opps = ["/", "*", "+", "-"];
@@ -51,13 +51,14 @@ const Home = () => {
    a = valuex - valuey;
   console.log("minus: "+a);
   }
+  const [answer,setAnswer]=useState(0)
   const Equal=()=>{
     return(
-        <div id="answer">
-        <div> {a}</div>
 
-        </div>
-      )
+      document.getElementById("answer").innerHTML=<div>{setAnswer(answer+a)}</div>
+    )
+    
+
 
   }
   const Erase=()=>{
@@ -80,7 +81,7 @@ const Home = () => {
         <div> {result}</div>
         <hr/>
         <div className="Result">Result:</div>
-        <div><Equal/></div>
+        <div id="answer">{a}</div>
       </div>
 
       <br />
